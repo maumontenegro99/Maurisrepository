@@ -42,8 +42,8 @@ public class LibroService {
     public Libro updateLibro(Libro libro) {
         return libroRepository.actualizar(libro);
     }
-    public String deleteLibro(int id) {
-        libroRepository.eliminar(id);
+    public String borrarLibro(int id) {
+        libroRepository.deleteLibro(id);
         return "producto eliminado";
     }
     public int totalLibrosV1(){

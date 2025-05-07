@@ -46,8 +46,8 @@ public class LibroController {
         return libroService.updateLibro(libro);
     }
     @DeleteMapping("/{id}")
-    public String eliminarLibro(@PathVariable int id) {
-        return libroService.deleteLibro(id);
+    public String deleteLibro(@PathVariable int id) {
+        return libroService.borrarLibro(id);
     }
     @GetMapping("/total")
     public int totalLibrosV2(){
